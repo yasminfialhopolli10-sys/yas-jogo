@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty Beauty Salon 🎀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🎀 Hello Kitty Beauty Salon 🎀</h1>
+    <p>O salão mais fofo do mundo!</p>
+    <div class="money">💰 Moedas: <span id="coins">100</span></div>
+</header>
+
+<main>
+    <section id="home" class="screen active">
+        <div class="kitty">🐱🎀</div>
+        <h2>Bem-vinda ao meu salão!</h2>
+        <p>Olá! Eu sou a Hello Kitty, a dona deste salão!</p>
+        <button onclick="startGame()">Começar a jogar 💗</button>
+    </section>
+
+    <section id="salon" class="screen">
+        <h2>Bem-vinda ao salão! 💕</h2>
+        <div class="kitty">🐱🎀</div>
+        <p id="message">Vamos deixar nossas clientes lindas!</p>
+
+        <div class="customer">
+            <div id="client">👩🏻</div>
+            <h3 id="clientName">Maria</h3>
+            <p id="request">Quero ficar linda!</p>
+        </div>
+
+        <h3>Escolha um serviço:</h3>
+        <div class="buttons">
+            <button onclick="openService('hair')">💇‍♀️ Cabelos</button>
+            <button onclick="openService('nails')">💅 Unhas</button>
+            <button onclick="openService('makeup')">💄 Maquiagem</button>
+        </div>
+
+        <button onclick="newClient()">👩 Próxima cliente</button>
+        <button onclick="openShop()">🛍️ Loja</button>
+    </section>
+
+    <section id="service" class="screen">
+        <h2 id="serviceTitle">Salão de beleza</h2>
+        <div id="preview">👩🏻</div>
+        <div id="options"></div>
+        <button onclick="finishService()">Finalizar atendimento 💗</button>
+        <button onclick="showScreen('salon')">Voltar</button>
+    </section>
+
+    <section id="shop" class="screen">
+        <h2>🛍️ Loja da Hello Kitty</h2>
+        <p>Compre itens para seu salão!</p>
+        <button onclick="buyItem('Esmalte especial', 20)">💅 Esmalte especial - 20 moedas</button>
+        <button onclick="buyItem('Laço rosa', 30)">🎀 Laço rosa - 30 moedas</button>
+        <button onclick="buyItem('Maquiagem brilhante', 40)">💄 Maquiagem - 40 moedas</button>
+        <button onclick="showScreen('salon')">Voltar ao salão</button>
+    </section>
+</main>
+
+<footer>Feito com muito amor 💗 Hello Kitty Beauty Salon</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

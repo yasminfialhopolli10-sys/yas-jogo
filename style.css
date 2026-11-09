@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fff0f6);
+    color: #b52b65;
+    text-align: center;
+}
+
+header {
+    background: #ff83b5;
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #ffb6d2;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.money {
+    background: white;
+    color: #e34c8b;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.screen {
+    display: none;
+    padding: 25px 15px;
+    min-height: 65vh;
+}
+
+.screen.active {
+    display: block;
+}
+
+.kitty {
+    font-size: 100px;
+    margin: 20px;
+}
+
+button {
+    background: #ff70a9;
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px #d875a2;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ec4d91;
+    transform: scale(1.05);
+}
+
+.customer {
+    background: white;
+    border-radius: 25px;
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 5px 15px #e9a6c5;
+}
+
+#client, #preview {
+    font-size: 100px;
+    margin: 15px;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    padding: 20px;
+    background: #ffb6d2;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 320px;
+    }
+}
